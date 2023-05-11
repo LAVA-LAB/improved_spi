@@ -1,6 +1,17 @@
-## Implementation of the IJCAI submission More for Less: Safe Policy Improvement with Stronger Performance Guarantees
+## Implementation of the IJCAI 2023 paper More for Less: Safe Policy Improvement with Stronger Performance Guarantees
 
-This code reproduces the experimental results presented in the paper and is built on top of the implementation of the ICML2019 paper: Safe Policy Improvement with Baseline Bootstrapping, by Romain Laroche, Paul Trichelair, and Rémi Tachet des Combes. (SPIBB)
+This code reproduces the experimental results presented in the paper and is built on top of the implementation of the ICML 2019 paper: Safe Policy Improvement with Baseline Bootstrapping, by Romain Laroche, Paul Trichelair, and Rémi Tachet des Combes.
+
+Developers:
+- Patrick Wienhöft
+- Marnix Suilen
+- Thiago D. Simão
+
+Contributers:
+- Clemens Dubslaff
+- Christel Baier
+- Nils Jansen
+
 
 
 ## Usage
