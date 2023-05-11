@@ -15,23 +15,24 @@ $ pip install -r requirements.txt
 To run the Gridworld experiments:
 
 ```
-$ python3 gridworld_main.py <output_experiment_name> <seeds> --Nwedge <nwedge> --cpus <cpus>
+$ python3 gridworld_main.py <output_experiment_name> <seeds> --Nwedges <nwedge> --cpus <cpus>
 ```
 where 
 - `<output_experiment_name>` is the name of the folder in /results/ where the results will be stored,
 - `<seeds>` is a (space-separated) list of seeds, e.g., `1 2 3 4` or `{1..1000}`,
-- `<nwedge>` is the Nwedge to use for standard SPIBB,
+- `<nwedges>` is the Nwedge to use for standard SPIBB, or a list of Nwedges, e.g. `60 120 180` to run simulatinously,
 - `<cpus>` indicates how many seeds to run in parallel.
 
 
 
-To run the Wet Chicken experiments:
+To run the Wet Chicken or Resource Gathering experiments:
 ```
-$ python3 main.py <output_experiment_name> <seeds> -e "chicken" --Nwedges <nwedges> --cpus <integer>
+$ python3 main.py <output_experiment_name> <seeds> -e <env_name> --Nwedges <nwedges> --cpus <integer>
 ```
 where 
 - `<output_experiment_name>` is the name of the folder in /results/ where the results will be stored,
 - `<seeds>` is a (space-separated) list of seeds, e.g., `1 2 3 4` or `{1..1000}`,
+- `<env_name>` is the environment to run, either `"chicken"` or `resource` for the Wet Chicken or Resource Gathering environment, respectively. 
 - `<nwedges>` is the Nwedge to use for standard SPIBB, or a list of Nwedges, e.g. `60 120 180` to run simulatinously,
 - `<cpus>` indicates how many seeds to run in parallel.
 
