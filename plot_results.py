@@ -122,7 +122,13 @@ def export_legend(ax, filename):
     fig2 = plt.figure()
     ax2 = fig2.add_subplot()
     ax2.axis('off')
-    legend = ax2.legend(*ax.get_legend_handles_labels(), frameon=False, loc='lower center')
+    handles, labels = ax.get_legend_handles_labels()
+    handles = handles[:9] + handles[0:1] + handles[9:]
+    labels = labels[:9] + ['Policy'] + labels[9:]
+    legend = ax2.legend(handles,labels, frameon=False, loc='lower center')
+
+    for x in [0, 5, 9]:
+        ax2.legend_.get_texts()[x].set_position((-20, 0))
     fig = legend.figure
     fig.canvas.draw()
     bbox = legend.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
