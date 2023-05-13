@@ -7,6 +7,7 @@ import matplotlib as mpl
 
 plt.style.use("matplotlibrc")
 mpl.rcParams['figure.figsize'] = '2.15, 1.25'
+mpl.rcParams['legend.borderpad'] = 0.5
 
 vmax = 1
 gamma = 0.95
@@ -41,7 +42,7 @@ ax.set_xlabel('$|S|$')
 # plot the function
 plt.plot(num_states, nwedges_2s, color='#2ca02c', label='$N_{\\wedge}^{2s}$')
 plt.plot(num_states, nwedges_beta, color='#d62728', label='$N_{\\wedge}^{\\beta}$')
-plt.legend(loc="right")
+plt.legend(loc="lower right")
 
 ax.figure.savefig("plots/nwedges_zoomed.pdf", bbox_inches='tight', pad_inches=0.02)
 
