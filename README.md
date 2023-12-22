@@ -13,6 +13,8 @@ Contributers:
 - Nils Jansen
 
 
+![teaser](https://github.com/lava-lab/improved_spi/blob/main/assets/teaser.gif?raw=true)
+
 
 ## Usage
 
